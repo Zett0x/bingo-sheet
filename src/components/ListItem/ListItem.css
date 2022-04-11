@@ -1,0 +1,33 @@
+.list-item {
+  width: 3rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  position: relative;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+.clicked {
+  background-color: blue;
+  color: white;
+}
+.cross {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.list-item:hover {
+  display: block;
+}
+
+@media (orientation: landscape) {
+  .list-item {
+    margin: 0.5rem;
+    width: 4rem;
+    height: 3rem;
+    padding: 1rem;
+  }
+}
