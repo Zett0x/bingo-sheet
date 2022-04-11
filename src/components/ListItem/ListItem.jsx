@@ -4,7 +4,7 @@ import "./ListItem.css";
 export const ListItem = ({ number }) => {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
-    setClicked(true);
+    setClicked(!clicked);
   };
   return (
     <div className={`list-item ${clicked && "clicked"}`} onClick={handleClick}>
