@@ -7,14 +7,6 @@ import { checkDuplicityNumbers } from "./utils/checkDuplicityNumbers";
 
 export const App = () => {
   const [numbers, setNumbers] = useState();
-  // let n = [];
-
-  // useEffect(() => {
-  //   for (let i = 0; i < 23; i++) {
-  //     n.push(getRandomInt());
-  //   }
-  //   setNumbers(n);
-  // }, []);
 
   useEffect(() => {
     const fetchData = async () => {
