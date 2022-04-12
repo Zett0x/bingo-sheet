@@ -7,5 +7,5 @@ export const checkDuplicityNumbers = (numbersArray, size = 15) => {
     set = [...new Set(set)];
   }
 
-  return set;
+  return set.sort((a, b) => a - b);
 };
