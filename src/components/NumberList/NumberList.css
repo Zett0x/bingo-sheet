@@ -4,6 +4,9 @@
   align-items: center;
   margin: 1rem;
 }
+.number-list--title {
+  font-size: 1.2rem;
+}
 
 .number-list {
   display: grid;

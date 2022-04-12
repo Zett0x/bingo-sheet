@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { getRandomnumber } from "./api/getRandomNumber";
 
 import { NumberList } from "./components/NumberList/NumberList";
+import { checkDuplicityNumbers } from "./utils/checkDuplicityNumbers";
 //import { getRandomInt } from "./utils/getRandomInt";
 
 export const App = () => {
@@ -19,7 +20,8 @@ export const App = () => {
     const fetchData = async () => {
       try {
         const data = await getRandomnumber();
-        setNumbers(data);
+        const dataFixed = checkDuplicityNumbers(data);
+        setNumbers(dataFixed);
       } catch (error) {
         console.log("error", error);
       }
